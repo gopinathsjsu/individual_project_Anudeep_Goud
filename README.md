@@ -29,6 +29,10 @@ How to run:
 Open terminal - java -cp anudeep-cmpe-202.jar com.anudeep.Main /Users/anudeepgoudkotagiri/Desktop/SEM1_Proj
 ects/individual-project-Anudeep_Goud/src/main/resources/input.csv /Users/anudeepgoudkotagiri/Desktop/SEM1_Projects/individual-project-Anudeep_Goud/src/main/resources/output.csv
 
+Test Inputs and Outputs can be found in :
+<img width="460" alt="Screenshot 2023-12-10 at 2 07 44 PM" src="https://github.com/gopinathsjsu/individual_project_Anudeep_Goud/assets/48233893/53458396-fadf-4629-b4fc-8b30a17dd64c">
+
+
 
 ### CSV Input files anf following output files
 ```
