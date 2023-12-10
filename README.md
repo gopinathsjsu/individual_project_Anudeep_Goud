@@ -48,7 +48,6 @@ cardNumber,cardType
 59012345678901234567890,"Invalid: more than 19 digits"
 347856341908126,AmericanExpress
 
-```
 
 ✗ cat demo2_input.csv
 
