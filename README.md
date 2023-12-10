@@ -1,4 +1,4 @@
-# anudeep-cmpe-202
+# Anudeep-cmpe-202
 
 Describe what is the primary problem you try to solve.
 
@@ -24,6 +24,9 @@ opinathsjsu/individual_project_Anudeep_Goud/assets/48233893/df04c928-8855-4f15-8
 Application Diagram:
 ![image](https://github.com/gopinathsjsu/individual_project_Anudeep_Goud/assets/48233893/ebeca40e-1d82-4c86-8331-1c1b0dd2cf5d)
 
+How to run:
+Open terminal - java -cp anudeep-cmpe-202.jar com.anudeep.Main /Users/anudeepgoudkotagiri/Desktop/SEM1_Proj
+ects/individual-project-Anudeep_Goud/src/main/resources/input.csv /Users/anudeepgoudkotagiri/Desktop/SEM1_Projects/individual-project-Anudeep_Goud/src/main/resources/output.csv
 
 
 ### CSV
