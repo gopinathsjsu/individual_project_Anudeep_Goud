@@ -48,6 +48,8 @@ cardNumber,cardType
 59012345678901234567890,"Invalid: more than 19 digits"
 347856341908126,AmericanExpress
 
+```
+
 ✗ cat demo2_input.csv
 
 cardNumber,expirationDate,cardHolderName
@@ -71,23 +73,32 @@ cardNumber,cardType
 Output is written to output.csv in output folder
 ```
 ```
+✗ cat demo2_input.json
+{
+	"cards": [
+		{
+		"cardNumber": "4123456789123",
+		"expirationDate": "04/26",
+		"cardHolderName": "Martha Clark"
+	},
+	{
+		"cardNumber": "6011111100007756",
+		"expirationDate": "02/24",
+		"cardHolderName": "John Doe"
+	},
+	{
+		"cardNumber": "3601112345678789",
+		"expirationDate": "06/24",
+		"cardHolderName": "Lara Wayne"
+	}
+	]
+ }
+
 ✗ cat output.json
 [
     {
-      "cardType": "MasterCard",
-      "cardNumber": "5567894523129089"
-    },
-    {
-      "cardType": "Invalid: more than 19 digits",
-      "cardNumber": "59012345678901234567890"
-    },
-    {
       "cardType": "Visa",
       "cardNumber": "4123456789123"
-    },
-    {
-      "cardType": "AmericanExpress",
-      "cardNumber": "347856341908126"
     },
     {
       "cardType": "Discover",
@@ -96,30 +107,6 @@ Output is written to output.csv in output folder
     {
       "cardType": "Invalid: not a possible card number",
       "cardNumber": "3601112345678789"
-    },
-    {
-      "cardType": "MasterCard",
-      "cardNumber": "5167894523129089"
-    },
-    {
-      "cardType": "Visa",
-      "cardNumber": "4123456789123999"
-    },
-    {
-      "cardType": "AmericanExpress",
-      "cardNumber": "377856341908126"
-    },
-    {
-      "cardType": "MasterCard",
-      "cardNumber": "5367894523129089"
-    },
-    {
-      "cardType": "Invalid: non numeric characters",
-      "cardNumber": "6011*890HJrt6789"
-    },
-    {
-      "cardType": "Invalid: empty/null card number",
-      "cardNumber": ""
     }
   ]
 ```
