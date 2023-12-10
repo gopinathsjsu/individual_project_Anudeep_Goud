@@ -5,10 +5,10 @@ Describe what is the primary problem you try to solve.
 We must categorize the credit card into a specific category and confirm it based on the specifications given, such as the first digits and the total number of digits for different types of credit cards.
 
 2. Describe what are the secondary problems you try to solve (if there are any).
-We must initialize the credit card objects appropriately based on the validation tests carried out in the step above. We should create an output file in the requested format with entries containing the credit card type, credit card number, and any error messages when given an input file containing a variety of credit card numbers. Error messages are displayed when there are non-numeric characters in credit card number provided in the input file.
+Ans - We must initialize the credit card objects appropriately based on the validation tests carried out in the step above. We should create an output file in the requested format with entries containing the credit card type, credit card number, and any error messages when given an input file containing a variety of credit card numbers. Error messages are displayed when there are non-numeric characters in credit card number provided in the input file.
 
 3. Describe what design pattern(s) you use how (use plain text and diagrams).
-Since this problem involves the construction of particular objects based on the input type, I decided to utilize the factory pattern to solve it.
+Ans - Since this problem involves the construction of particular objects based on the input type, I decided to utilize the factory pattern to solve it.
 ● The client requests the writing of a particular kind of output file and provides an input file containing credit card numbers.
 ● A new RecordIO object is created. A suitable _filetype_RecordIO object is then constructed in the RecordIOFactory depending on the input filename given by the client.
 ● There is logic in certain _filetype_RecordIO subclasses (CsvRecordIO, JsonRecordIO, and XmlRecordIO) to read the records in the input file using the proper readers and write the contents to an output file.
@@ -29,26 +29,39 @@ Open terminal - java -cp anudeep-cmpe-202.jar com.anudeep.Main /Users/anudeepgou
 ects/individual-project-Anudeep_Goud/src/main/resources/input.csv /Users/anudeepgoudkotagiri/Desktop/SEM1_Projects/individual-project-Anudeep_Goud/src/main/resources/output.csv
 
 
-### CSV
+### CSV Input files anf following output files
 ```
 ✗ java -cp out/artifacts/anudeep_cmpe_202_jar/anudeep-cmpe-202.jar com.anudeep.Main src/main/resources/input.csv output/output.csv
 Output is written to output.csv in output folder
 ```
 ```
-✗ cat output.csv
-CardNumber,CardType
+✗ cat demo1_input.csv
+cardNumber,expirationDate,cardHolderName
+5567894523129089,08/26,John Doe
+59012345678901234567890,10/24,Lisa Claire
+347856341908126,03/23,Jane S. Dayton
+
+✗ cat demo1_output.csv
+
+cardNumber,cardType
 5567894523129089,MasterCard
 59012345678901234567890,"Invalid: more than 19 digits"
-4123456789123,Visa
 347856341908126,AmericanExpress
+
+✗ cat demo2_input.csv
+
+cardNumber,expirationDate,cardHolderName
+4123456789123,04/26,Martha Clark
+6011111100007756,02/24,John Doe
+3601112345678789,06/24,Lara Wayne
+
+✗ cat demo2_output.csv
+
+cardNumber,cardType
+4123456789123,Visa
 6011111100007756,Discover
 3601112345678789,"Invalid: not a possible card number"
-5167894523129089,MasterCard
-4123456789123999,Visa
-377856341908126,AmericanExpress
-5367894523129089,MasterCard
-"6011*890HJrt6789","Invalid: non numeric characters"
-,"Invalid: empty/null card number"
+
 
 ```
 
